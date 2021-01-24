@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm 
-# from django.contrib.auth.views import logout     # This logout is imported from somewhere else. You can figure out where if you wanna use it.
 from django.contrib.auth.decorators import login_required
 from .forms import *
 from django.http import Http404
