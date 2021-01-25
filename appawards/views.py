@@ -88,6 +88,6 @@ def search(request):
     return render(request, 'search.html', locals())
 
 
-@login_required(login_url='/accounts/login')
-def logout(request):
-    logout(request)
+# @login_required(login_url='/accounts/login')
+# def logout(request):
+#     logout(request)
