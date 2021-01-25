@@ -13,10 +13,6 @@
           <h3 class="w3-center">Post a Project</h3>
         </div>
         <div class="panel-body ">
-          <div class="panel-heading w3-theme-d5">
-            <h3 class="w3-center">project Name</h3>
-            <h3 class="w3-center">Post  Project</h3>
-          </div>
           <form  method="post" enctype="multipart/form-data">
             {% csrf_token %}
             {%bootstrap_form uploadform%}
