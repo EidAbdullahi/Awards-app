@@ -2,17 +2,16 @@
 {% load bootstrap3 %}
 {% load crispy_forms_tags %}
 {% block content %}
-<div id='zote' class="w3-container-fluid w3-theme-l5">
-    <div class="w3-row">
+
+<div class="container">
+    <div class="row">
+      <div class="col">
         <div class="col-md-5">
-            <img src="https://images.pexels.com/photos/2040276/pexels-photo-2040276.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                style="width:auto; height:640px; padding-left: 0%;" alt="">
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="col-md-7" style="padding-left: 14%">
+            <img src="https://thumbs.dreamstime.com/b/text-sign-showing-website-secure-login-conceptual-photo-uses-ssl-to-encrypt-user-name-password-cocktail-wine-glass-text-138313973.jpg"
+                style="width:550px; height:100px; padding-left: 30%; " alt="">
+      </div>
+      <div class="col">
+        <div class="col-md-5">
             <div class="panel panel-default w3-card">
                 <div class="panel-heading w3-theme-d4">
                     <h3 class="text-center">Sign In</h3>
@@ -26,6 +25,32 @@
                         </div>
 
                     </form>
+      </div>
+    </div>
+<div id='zote' class="w3-container-fluid w3-theme-l5">
+    <!-- <div class="w3-row">
+        <div class="col-md-5">
+            <img src="https://thumbs.dreamstime.com/b/text-sign-showing-website-secure-login-conceptual-photo-uses-ssl-to-encrypt-user-name-password-cocktail-wine-glass-text-138313973.jpg"
+                style="width:350; height:440px; padding-left: 30%; " alt="">
+        </div> -->
+        <!-- <br>
+        <br> -->
+        <!-- <br>
+        <br>
+        <!-- <div class="col-md-7" style="padding-left: 14%">
+            <div class="panel panel-default w3-card">
+                <div class="panel-heading w3-theme-d4">
+                    <h3 class="text-center">Sign In</h3>
+                </div>
+                <div class="panel-body ">
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form|crispy}}
+                        <div class="form-group">
+                            <input type="submit" class="w3-button w3-theme-d4" value="Login">
+                        </div>
+
+                    </form> --> 
                 </div>
             </div>
         </div>
