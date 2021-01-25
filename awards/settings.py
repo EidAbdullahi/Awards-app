@@ -182,7 +182,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 #configure django app for heroku
 LOGIN_REDIRECT_URL = 'home'
-STAR_RATINGS_RANGE = 1
+STAR_RATINGS_RANGE = 10
 
 
 django_heroku.settings(locals())
