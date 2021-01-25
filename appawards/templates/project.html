@@ -1,5 +1,6 @@
 {% load static %}
 {% load ratings %}
+{% load bootstrap3 %}
 <!DOCTYPE html>
 <html>
 <title>awe_wards.</title>
@@ -100,7 +101,7 @@
             </div>
             <div class="w3-container w3-col l6 w3-padding w3-margin-bottom">
                 <h5 class="w3-center">Project Details</h5>
-                <p>Name: {{project.project_name}}</p>
+                <p>Name:{{project.project_name}}</p>
                 <p>Description: {{project.description}}</p>
                 <br>
                 <a href="{{project.url}}"><i class="fa fa-lg w3-text-green fa-globe"> visit</i></a>
