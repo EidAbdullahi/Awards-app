@@ -15,7 +15,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('appawards.urls')),
     url(r'^accounts/logout/', auth_views.LogoutView, {'next_page': '/'}, name='logout'),
-    # url(r'^logout/$', views.logout, name='logout'),
+    url( r'^login/$',auth_views.LoginView.as_view(template_name="useraccounts/login.html"), name="login"),
     url(r'^ratings/', include('star_ratings.urls', namespace='ratings')),
     url(r'^api-token-auth/', obtain_auth_token),
     url(r'^search/$', views.search, name='search'),
