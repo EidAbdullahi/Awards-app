@@ -90,4 +90,4 @@ def search(request):
 
 @login_required(login_url='/accounts/login')
 def logout(request):
-    logout(request).
+    logout(request)
