@@ -1,5 +1,5 @@
 {% extends 'registration/base.html'%}
-{%load bootstrap3%}
+{% load bootstrap3 %}
 {% load crispy_forms_tags %}
 {% block content %}
 
@@ -15,7 +15,7 @@
         <div class="panel-body ">
           <div class="panel-heading w3-theme-d5">
             <h3 class="w3-center">project Name</h3>
-            <h3 class="w3-center">Post  a Project</h3>
+            <h3 class="w3-center">Post  Project</h3>
           </div>
           <form  method="post" enctype="multipart/form-data">
             {% csrf_token %}
